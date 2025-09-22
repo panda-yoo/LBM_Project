@@ -2,7 +2,7 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
-A brief one or two-sentence description of what your project does, what problem it solves, and the main technologies it uses.
+Repository contains some examples of LBM code .
 
 ---
 
@@ -19,7 +19,7 @@ A brief one or two-sentence description of what your project does, what problem 
 
 ## About The Project
 
-Provide a more detailed explanation of your project here. You can discuss the motivation behind it, the goals you wanted to achieve, and any interesting challenges you faced. You can also include images or GIFs of your project in action.
+This repository contains some test examples created using Palabos library.
 
 
 
@@ -27,9 +27,9 @@ Provide a more detailed explanation of your project here. You can discuss the mo
 
 ## ✨ Key Features
 
-* Feature 1: A brief description of a core feature.
-* Feature 2: Another cool thing your project can do.
-* Feature 3: And one more for good measure.
+* Feature 1: Uses Palabos library to simulate examples.
+* Feature 2: analysis.py generates plots and gifs.
+
 
 ---
 
@@ -49,13 +49,13 @@ Provide a step-by-step guide on how to get a local copy of your project up and r
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your_username/your_repository.git](https://github.com/your_username/your_repository.git)
-    cd your_repository
+    git clone [https://github.com/panda-yoo/LBM_Project.git]
+    cd LBM_Project
     ```
 
 2.  **Build the Docker Image (if applicable)**
     ```bash
-    docker build -t your-image-name .
+    docker build -t lbm_examples .
     ```
 
 3.  **Compile the Code**
