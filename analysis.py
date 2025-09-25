@@ -8,7 +8,7 @@ import os
 
 # os.makedirs('results')
 
-PATH = os.path.join(os.getcwd(),'build//tmp')
+PATH = os.path.join(os.getcwd(),'data')
 
 def make_folder(folder_name:str,path:str):
 

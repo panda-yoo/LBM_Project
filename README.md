@@ -92,3 +92,8 @@ Here are the most common syntax elements for formatting your `.md` file:
 | Unordered List| `* Item 1` | * Item 1 |
 | Ordered List | `1. Item 1` | 1. Item 1 |
 | Code Block | \`\`\`language <br> code <br> \`\`\` | ```python <br> print("Hello") <br> ``` |
+
+---
+
+## : acknowledgments
+---

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  palabos-sim:
+    build: .
+    image: palabos-simulation
+   
+    volumes:
+      - ./results:/app/results
+     
+
+
