@@ -1,0 +1,425 @@
+Script started on 2025-10-19 10:00:07+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="47" LINES="55"]
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ls -la /work/.vscode || true[Kls -la /work/.vscode || trueg++ -I/work/PROJECT/include -sttd=gnu++17 -c /work/PROJECT/src/custom_dynamics.cpp -o /work/PROOJECT/build/custom_dynamics.o[A[ACT# /bin/true[K
+[K
+[K[A[Aroot@d87210e5eb38:/work/PROJECT# /bin/trueg++ -I/work/PROJECT/include -sttd=gnu++17 -c /work/PROJECT/src/custom_dynamics.cpp -o /work/PROOJECT/build/custom_dynamics.o[A[ACT# [2Pls -la /work/.vscode || true
+[K
+[K[A[Aroot@d87210e5eb38:/work/PROJECT# ls -la /work/.vscode || true[K./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+In file included from [01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerFunctional2D.h:750[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/bounceBackModels2D.h:42[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/headers2D.h:40[m[K,
+                 from [01m[K/usr/local/include/palabos/src/palabos2D.h:37[m[K,
+                 from [01m[K/work/PROJECT/main.cpp:1[m[K:
+/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h: In instantiation of '[01m[Kvoid plb::IniCustomEquilibriumFunctional2D<T, Descriptor, RhoUFunction>::[01;32m[Kexecute[m[K(plb::plint, plb::plint, plb::Cell<T, Descriptor>&) const [35m[K[with T = double; Descriptor = plb::descriptors::D2Q9Descriptor; RhoUFunction = plb::MultiScalarField2D<double>; plb::plint = long int][m[K[m[K':
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:144:6:[m[K   required from here
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:149:6:[m[K [01;31m[Kerror: [m[Kno match for call to '[01m[K(const plb::MultiScalarField2D<double>) (plb::plint&, plb::plint&, double&, plb::Array<double, 2>&)[m[K'
+  149 |     [01;31m[Kf(iX, iY, rho, j)[m[K;
+      |     [01;31m[K~^~~~~~~~~~~~~~~~[m[K
+/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h: In instantiation of '[01m[Kvoid plb::SetToScalarFunctionFunctional2D<T, Function>::[01;32m[Kprocess[m[K(plb::Box2D, plb::ScalarField2D<T>&) [35m[K[with T = double; Function = CustomDensity<double>][m[K[m[K':
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:256:6:[m[K   required from here
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:263:42:[m[K [01;31m[Kerror: [m[Kno match for call to '[01m[K(CustomDensity<double>) (long int, long int)[m[K'
+  263 |             field.get(pos[0], pos[1]) = [01;31m[Kf(pos[0] + ofs[0], pos[1] + ofs[1])[m[K;
+      |                                         [01;31m[K~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/work/PROJECT/main.cpp:5[m[K:
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:10:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kvoid CustomDensity<T>::[01;32m[Koperator()[m[K(plb::plint, plb::plint, T&, plb::Array<T, 2>&) const [35m[K[with T = double; plb::plint = long int][m[K[m[K'
+   14 |     void [01;36m[Koperator[m[K()(plb::plint ix, plb::plint iy, T &rho, plb::Array<T, 2> &u0) const
+      |          [01;36m[K^~~~~~~~[m[K
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+make[2]: *** [CMakeFiles/example.dir/build.make:104: CMakeFiles/example.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+❌ Build failed. Executable 'example' not found.
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT
+# [K[A[K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJ
+ECT# [K[A[K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT
+# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+In file included from [01m[K/work/PROJECT/src/custom_dynamics.cpp:2[m[K:
+[01m[K/work/PROJECT/include/custom_dynamics.h:[m[K In member function '[01m[KT CustomDensity<T>::[01;32m[Koperator()[m[K(plb::plint, plb::plint) const[m[K':
+[01m[K/work/PROJECT/include/custom_dynamics.h:23:5:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[K}[m[K' token
+   23 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:76: CMakeFiles/example.dir/src/custom_dynamics.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+❌ Build failed. Executable 'example' not found.
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT
+# [K[A[K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[01m[K/work/PROJECT/main.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[01m[K/work/PROJECT/main.cpp:26:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KCustomDensity<double>::CustomDensity(double, plb::Array<double, 2>&)[m[K'
+   26 |     CustomDensity<T> den(1.0, u[01;31m[K)[m[K;
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/work/PROJECT/main.cpp:5[m[K:
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[KCustomDensity<T>::[01;32m[KCustomDensity[m[K(T) [35m[K[with T = double][m[K[m[K'
+   14 |     [01;36m[KCustomDensity[m[K(T density) : density_(density) {}
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kconstexpr CustomDensity<double>::[01;32m[KCustomDensity[m[K(const CustomDensity<double>&)[m[K'
+   10 | class [01;36m[KCustomDensity[m[K
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kconstexpr CustomDensity<double>::[01;32m[KCustomDensity[m[K(CustomDensity<double>&&)[m[K'
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+In file included from [01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerFunctional2D.h:750[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/bounceBackModels2D.h:42[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/headers2D.h:40[m[K,
+                 from [01m[K/usr/local/include/palabos/src/palabos2D.h:37[m[K,
+                 from [01m[K/work/PROJECT/main.cpp:1[m[K:
+/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h: In instantiation of '[01m[Kvoid plb::IniCustomEquilibriumFunctional2D<T, Descriptor, RhoUFunction>::[01;32m[Kexecute[m[K(plb::plint, plb::plint, plb::Cell<T, Descriptor>&) const [35m[K[with T = double; Descriptor = plb::descriptors::D2Q9Descriptor; RhoUFunction = plb::MultiScalarField2D<double>; plb::plint = long int][m[K[m[K':
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:144:6:[m[K   required from here
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:149:6:[m[K [01;31m[Kerror: [m[Kno match for call to '[01m[K(const plb::MultiScalarField2D<double>) (plb::plint&, plb::plint&, double&, plb::Array<double, 2>&)[m[K'
+  149 |     [01;31m[Kf(iX, iY, rho, j)[m[K;
+      |     [01;31m[K~^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:104: CMakeFiles/example.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+❌ Build failed. Executable 'example' not found.
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# cla ear
+[?2004l[H[2J[3J[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# clear./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[01m[K/work/PROJECT/main.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[01m[K/work/PROJECT/main.cpp:26:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KCustomDensity<double>::CustomDensity(double, plb::Array<double, 2>&)[m[K'
+   26 |     CustomDensity<T> den(1.0, u[01;31m[K)[m[K;
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/work/PROJECT/main.cpp:5[m[K:
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[KCustomDensity<T>::[01;32m[KCustomDensity[m[K(T) [35m[K[with T = double][m[K[m[K'
+   14 |     [01;36m[KCustomDensity[m[K(T density) : density_(density) {}
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/work/PROJECT/include/custom_dynamics.h:14:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kconstexpr CustomDensity<double>::[01;32m[KCustomDensity[m[K(const CustomDensity<double>&)[m[K'
+   10 | class [01;36m[KCustomDensity[m[K
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kconstexpr CustomDensity<double>::[01;32m[KCustomDensity[m[K(CustomDensity<double>&&)[m[K'
+[01m[K/work/PROJECT/include/custom_dynamics.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+In file included from [01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerFunctional2D.h:750[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/bounceBackModels2D.h:42[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/headers2D.h:40[m[K,
+                 from [01m[K/usr/local/include/palabos/src/palabos2D.h:37[m[K,
+                 from [01m[K/work/PROJECT/main.cpp:1[m[K:
+/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h: In instantiation of '[01m[Kvoid plb::IniCustomEquilibriumFunctional2D<T, Descriptor, RhoUFunction>::[01;32m[Kexecute[m[K(plb::plint, plb::plint, plb::Cell<T, Descriptor>&) const [35m[K[with T = double; Descriptor = plb::descriptors::D2Q9Descriptor; RhoUFunction = plb::MultiScalarField2D<double>; plb::plint = long int][m[K[m[K':
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:144:6:[m[K   required from here
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:149:6:[m[K [01;31m[Kerror: [m[Kno match for call to '[01m[K(const plb::MultiScalarField2D<double>) (plb::plint&, plb::plint&, double&, plb::Array<double, 2>&)[m[K'
+  149 |     [01;31m[Kf(iX, iY, rho, j)[m[K;
+      |     [01;31m[K~^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:104: CMakeFiles/example.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+❌ Build failed. Executable 'example' not found.
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh exampleclear[K
+[?2004l[H[2J[3J[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# clear[Kclear./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+In file included from [01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerFunctional2D.h:750[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/bounceBackModels2D.h:42[m[K,
+                 from [01m[K/usr/local/include/palabos/src/boundaryCondition/headers2D.h:40[m[K,
+                 from [01m[K/usr/local/include/palabos/src/palabos2D.h:37[m[K,
+                 from [01m[K/work/PROJECT/main.cpp:1[m[K:
+/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h: In instantiation of '[01m[Kvoid plb::IniCustomEquilibriumFunctional2D<T, Descriptor, RhoUFunction>::[01;32m[Kexecute[m[K(plb::plint, plb::plint, plb::Cell<T, Descriptor>&) const [35m[K[with T = double; Descriptor = plb::descriptors::D2Q9Descriptor; RhoUFunction = plb::MultiScalarField2D<double>; plb::plint = long int][m[K[m[K':
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:144:6:[m[K   required from here
+[01m[K/usr/local/include/palabos/src/dataProcessors/dataInitializerGenerics2D.h:149:6:[m[K [01;31m[Kerror: [m[Kno match for call to '[01m[K(const plb::MultiScalarField2D<double>) (plb::plint&, plb::plint&, double&, plb::Array<double, 2>&)[m[K'
+  149 |     [01;31m[Kf(iX, iY, rho, j)[m[K;
+      |     [01;31m[K~^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/example.dir/build.make:104: CMakeFiles/example.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/example.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+❌ Build failed. Executable 'example' not found.
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# [K]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# cla ear
+[?2004l[H[2J[3J[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# clear./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (4.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- MPI include: /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libs: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+-- Configuring done (3.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/PROJECT/build
+--> Compiling the project with make...
+[ 25%] [32mBuilding CXX object CMakeFiles/example.dir/src/custom_dynamics.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/example.dir/src/lattice_initilization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/example.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable example[0m
+[100%] Built target example
+✅ Build successful!
+--- Running 'example' ---
+--- Program finished. ---
+[?2004h]0;root@d87210e5eb38: /work/PROJECTroot@d87210e5eb38:/work/PROJECT# ./script.sh example
+[?2004l--> Cleaning up old build directory...
+--> Creating build directory and configuring with CMake...
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Fou
